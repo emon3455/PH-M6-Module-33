@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Post</title>
+
+    <style>
+
+        .header{
+            text-align: center;
+            background-color: #c660f5;
+            color: aliceblue;
+            padding: 1rem;
+        }
+
+        .section-header{
+            background-color: cornflowerblue;
+            padding: 1rem;
+            margin-left: 0.5rem;
+            color: aliceblue;
+        }
+
+        .blog-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: azure;
+            padding: 1rem;
+        }
+
+        .blogs{
+            background-color: #ecdf90;
+            margin: 0.5rem;
+            border-radius: 10px;
+            padding: 1rem;
+        }
+
+        
+        @media screen and (max-width: 576px) {
+            .blog-container{
+            grid-template-columns: 1fr;
+        }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="header">Welcome To Dynamic Blog Post</h1>
+    </header>
+
+    <main>
+
+        <section class="blog-section" >
+
+            <h2 class="section-header">All Blog post Start Here: </h2>
+
+            <div class="blog-container" id="blog-container">
+
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+    <!-- js -->
+    <script src="./js/leadPost.js"></script>
+
+
+</body>
+</html>
